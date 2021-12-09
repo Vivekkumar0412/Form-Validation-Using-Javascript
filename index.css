@@ -1,0 +1,42 @@
+body {
+  background-color: rgb(135, 216, 216);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+input {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 300px;
+}
+input[type="submit"] {
+  width: 322px;
+  background-color: rgb(135, 216, 216);
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+input[type="submit"]:hover {
+  box-shadow: 1px 2px 11px cyan;
+}
+.error {
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+  color: red;
+}

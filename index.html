@@ -5,50 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Validation</title>
-    <style>
-      body {
-        background-color: rgb(135, 216, 216);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
-      #container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-      }
-      form {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
-      input {
-        margin: 10px;
-        padding: 10px;
-        text-align: center;
-        width: 300px;
-      }
-      input[type="submit"] {
-        width: 322px;
-        background-color: rgb(135, 216, 216);
-        border: none;
-        cursor: pointer;
-        color: white;
-      }
-      input[type="submit"]:hover {
-        box-shadow: 1px 2px 11px cyan;
-      }
-      .error {
-        margin: 0px;
-        padding: 0px;
-        text-align: left;
-        color: red;
-      }
-    </style>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <div id="container">
@@ -61,42 +18,6 @@
         <input type="submit" id="submit" />
       </form>
     </div>
-    <script>
-        let flag = 1;
-      let un = document.getElementById("username");
-      let ps = document.getElementById("password");
-      let sub = document.getElementById("submit");
-      let usererror = document.getElementById("usererror");
-      let passerror = document.getElementById("passerror");
-      sub.addEventListener("click", function () {
-        if (un.value == "") {
-          usererror.innerHTML = "user name is empty";
-          flag = 0;
-        } else if (un.value.length < 3) {
-          usererror.innerHTML = "Minimum 3 characters required";
-          flag = 0;
-        }else{
-            usererror.innerHTML = "";
-            flag = 1;
-        }
-        if (ps.value == "") {
-          passerror.innerHTML = "Password is empty";
-          flag = 0;
-        } else if (ps.value.length < 5) {
-          passerror.innerHTML = "Password  requires minimum 5 character";
-          flag = 0;
-        }else{
-            passerror.innerHTML = "";
-            flag = 1;
-        }
-        if(flag == 1){
-            alert("submited")
-            return true;
-        }else{
-            alert("not submited")
-            return false;
-        }
-      });
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>
