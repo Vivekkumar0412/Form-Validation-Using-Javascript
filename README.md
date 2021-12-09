@@ -6,3 +6,5 @@
 # When both the inputs are vaccant
 ![Screenshot (230)](https://user-images.githubusercontent.com/58084456/145456618-ba3c93b0-2987-4737-92cd-e4256d481bfb.png)
 # When username is empty
+![Screenshot (231)](https://user-images.githubusercontent.com/58084456/145456740-96e3c650-931b-4343-89ac-8a1d24f7a7cf.png)
+# When only password is empty
